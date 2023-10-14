@@ -3,82 +3,123 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{li-etal-2022-ntulm,
+    title = "{NTULM}: Enriching Social Media Text Representations with Non-Textual Units",
+    author = "Li, Jinning  and
+      Mishra, Shubhanshu  and
+      El-Kishky, Ahmed  and
+      Mehta, Sneha  and
+      Kulkarni, Vivek",
+    booktitle = "Proceedings of the Eighth Workshop on Noisy User-generated Text (W-NUT 2022)",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.wnut-1.7",
+    pages = "69--82",
+    abstract = "On social media, additional context is often present in the form of annotations and meta-data such as the post{'}s author, mentions, Hashtags, and hyperlinks. We refer to these annotations as Non-Textual Units (NTUs). We posit that NTUs provide social context beyond their textual semantics and leveraging these units can enrich social media text representations. In this work we construct an NTU-centric social heterogeneous network to co-embed NTUs. We then principally integrate these NTU embeddings into a large pretrained language model by fine-tuning with these additional units. This adds context to noisy short-text social media. Experiments show that utilizing NTU-augmented text representations significantly outperforms existing text-only baselines by 2-5{\%} relative points on many downstream tasks highlighting the importance of context to social media NLP. We also highlight that including NTU context into the initial layers of language model alongside text is better than using it after the text embedding is generated. Our work leads to the generation of holistic general purpose social media content embedding.",
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{NEURIPS2022_09723c9f,
+ author = {Mishra, Shubhanshu and Saini, Aman and Makki, Raheleh and Mehta, Sneha and Haghighi, Aria and Mollahosseini, Ali},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {1419--1433},
+ publisher = {Curran Associates, Inc.},
+ title = {TweetNERD - End to End Entity Linking Benchmark for Tweets},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/09723c9f291f6056fd1885081859c186-Paper-Datasets_and_Benchmarks.pdf},
+ volume = {35},
+ year = {2022}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
+@misc{mehta2020low,
+      title={Low Rank Factorization for Compact Multi-Head Self-Attention}, 
+      author={Sneha Mehta and Huzefa Rangwala and Naren Ramakrishnan},
+      year={2020},
+      eprint={1912.00835},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{eskander-etal-2022-towards,
+    title = "Towards Improved Distantly Supervised Multilingual Named-Entity Recognition for Tweets",
+    author = "Eskander, Ramy  and
+      Mishra, Shubhanshu  and
+      Mehta, Sneha  and
+      Samaniego, Sofia  and
+      Haghighi, Aria",
+    booktitle = "Proceedings of the The 2nd Workshop on Multi-lingual Representation Learning (MRL)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.mrl-1.12",
+    doi = "10.18653/v1/2022.mrl-1.12",
+    pages = "115--124",
+    abstract = "Recent low-resource named-entity recognition (NER) work has shown impressive gains by leveraging a single multilingual model trained using distantly supervised data derived from cross-lingual knowledge bases. In this work, we investigate such approaches by leveraging Wikidata to build large-scale NER datasets of Tweets and propose two orthogonal improvements for low-resource NER in the Twitter social media domain: (1) leveraging domain-specific pre-training on Tweets; and (2) building a model for each language family rather than an all-in-one single multilingual model. For (1), we show that mBERT with Tweet pre-training outperforms the state-of-the-art multilingual transformer-based language model, LaBSE, by a relative increase of 34.6{\%} in F1 when evaluated on Twitter data in a language-agnostic multilingual setting. For (2), we show that learning NER models for language families outperforms a single multilingual model by relative increases of 14.1{\%}, 15.8{\%} and 45.3{\%} in F1 when utilizing mBERT, mBERT with Tweet pre-training and LaBSE, respectively. We conduct analyses and present examples for these observed improvements.",
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{10.1145/3301275.3302301,
+author = {Mohanty, Vikram and Thames, David and Mehta, Sneha and Luther, Kurt},
+title = {Photo Sleuth: Combining Human Expertise and Face Recognition to Identify Historical Portraits},
+year = {2019},
+isbn = {9781450362726},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3301275.3302301},
+doi = {10.1145/3301275.3302301},
+abstract = {Identifying people in historical photographs is important for preserving material culture, correcting the historical record, and creating economic value, but it is also a complex and challenging task. In this paper, we focus on identifying portraits of soldiers who participated in the American Civil War (1861-65), the first widely-photographed conflict. Many thousands of these portraits survive, but only 10--20\% are identified. We created Photo Sleuth, a web-based platform that combines crowdsourced human expertise and automated face recognition to support Civil War portrait identification. Our mixed-methods evaluation of Photo Sleuth one month after its public launch showed that it helped users successfully identify unknown portraits and provided a sustainable model for volunteer contribution. We also discuss implications for crowd-AI interaction and person identification pipelines.},
+booktitle = {Proceedings of the 24th International Conference on Intelligent User Interfaces},
+pages = {547–557},
+numpages = {11},
+keywords = {crowd-AI interaction, person identification, face recognition, crowdsourcing, online communities, history},
+location = {Marina del Ray, California},
+series = {IUI '19}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@misc{mehta2022improving,
+      title={Improving Zero-Shot Event Extraction via Sentence Simplification}, 
+      author={Sneha Mehta and Huzefa Rangwala and Naren Ramakrishnan},
+      year={2022},
+      eprint={2204.02531},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@inproceedings{10.1145/3308558.3313659,
+author = {Mehta, Sneha and Islam, Mohammad Raihanul and Rangwala, Huzefa and Ramakrishnan, Naren},
+title = {Event Detection Using Hierarchical Multi-Aspect Attention},
+year = {2019},
+isbn = {9781450366748},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3308558.3313659},
+doi = {10.1145/3308558.3313659},
+abstract = {Classical event encoding and extraction methods rely on fixed dictionaries of keywords and templates or require ground truth labels for phrase/sentences. This hinders widespread application of information encoding approaches to large-scale free form (unstructured) text available on the web. Event encoding can be viewed as a hierarchical task where the coarser level task is event detection, i.e., identification of documents containing a specific event, and where the fine-grained task is one of event encoding, i.e., identifying key phrases, key sentences. Hierarchical models with attention seem like a natural choice for this problem, given their ability to differentially attend to more or less important features when constructing document representations. In this work we present a novel factorized bilinear multi-aspect attention mechanism (FBMA) that attends to different aspects of text while constructing its representation. We find that our approach outperforms state-of-the-art baselines for detecting civil unrest, military action, and non-state actor events from corpora in two different languages.},
+booktitle = {The World Wide Web Conference},
+pages = {3079–3085},
+numpages = {7},
+keywords = {Multi-Aspect Attention, Neural Networks, Event Encoding, Hierarchical Attention},
+location = {San Francisco, CA, USA},
+series = {WWW '19}
+}
+
+@article{Mehta_Azarnoush_Chen_Saluja_Misra_Bihani_Kumar_2020,
+ title={Simplify-Then-Translate: Automatic Preprocessing for Black-Box Translation}, 
+ volume={34}, 
+ url={https://ojs.aaai.org/index.php/AAAI/article/view/6369}, 
+ DOI={10.1609/aaai.v34i05.6369}, 
+ abstractNote={&lt;p&gt;Black-box machine translation systems have proven incredibly useful for a variety of applications yet by design are hard to adapt, tune to a specific domain, or build on top of. In this work, we introduce a method to improve such systems via automatic pre-processing (APP) using sentence simplification. We first propose a method to automatically generate a large in-domain paraphrase corpus through back-translation with a black-box MT system, which is used to train a paraphrase model that “simplifies” the original sentence to be more conducive for translation. The model is used to preprocess source sentences of multiple low-resource language pairs. We show that this preprocessing leads to better translation performance as compared to non-preprocessed source sentences. We further perform side-by-side human evaluation to verify that translations of the simplified sentences are better than the original ones. Finally, we provide some guidance on recommended language pairs for generating the simplification model corpora by investigating the relationship between ease of translation of a language pair (as measured by BLEU) and quality of the resulting simplification model from back-translations of this language pair (as measured by SARI), and tie this into the downstream task of low-resource translation.&lt;/p&gt;}, 
+ number={05}, 
+ journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+ author={Mehta, Sneha and Azarnoush, Bahareh and Chen, Boris and Saluja, Avneesh and Misra, Vinith and Bihani, Ballav and Kumar, Ritwik}, year={2020}, month={Apr.}, pages={8488-8495} }
+
+
+@misc{mehta2022improving,
+      title={Improving Zero-Shot Event Extraction via Sentence Simplification}, 
+      author={Sneha Mehta and Huzefa Rangwala and Naren Ramakrishnan},
+      year={2022},
+      eprint={2204.02531},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
