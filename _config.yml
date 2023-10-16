@@ -163,6 +163,7 @@ external_sources:
 # Collections
 # -----------------------------------------------------------------------------
 
+
 # collections:
 #   news:
 #     defaults:
