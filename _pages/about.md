@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm an AI research scientist and engineer. I've done research in NLP (large language models, machine translation, and information extraction), graph ml (representation learning), recommender systems and HCI (crowdsourcing). Most recently I was at Bloomberg working on training large language models for customer support systems. Before that I was a research scientist at Twitter working on recommendation systems.
+I'm an AI research scientist and engineer. I've done research in NLP (large language models, machine translation, and information extraction), graph ml (representation learning), recommender systems and HCI (crowdsourcing). Currently, I work on LLM post-training at Meta for ARVR devices such as Rayban Meta Smart Glasses and Quest. In the past, I have worked on building recommender systems for global social networks such as Twitter & TikTok.
 
 I graduated with a PhD from the Data Mining Group at Virginia Tech, where I had the privilege to be advised by [Dr. Naren Ramakrishnan](https://people.cs.vt.edu/naren/). I was also fortunate enough to have had my PhD studies funded by both an NSF Graduate Research Fellowship and a DARPA Research Grant. Before that I spent time developing crowd+AI systems with [Dr. Kurt Luther](https://crowd.cs.vt.edu/kurt-luther/).
 
