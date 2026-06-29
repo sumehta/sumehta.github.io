@@ -49,7 +49,7 @@ Most modern CUAs are built on **Vision-Language Models (VLMs)** — multimodal t
 
 ### The Core Perception-Action Loop
 
-{% mermaid %}
+<div class="mermaid">
 %%{init: {'theme': 'neutral', 'flowchart': {'curve': 'basis', 'nodeSpacing': 50, 'rankSpacing': 60}}}%%
 flowchart LR
     goal(["Task Goal"])
@@ -81,7 +81,9 @@ flowchart LR
     style perceive fill:#f8fafc,stroke:#94a3b8,color:#334155
     style reason   fill:#f8fafc,stroke:#94a3b8,color:#334155
     style act      fill:#f8fafc,stroke:#94a3b8,color:#334155
-{% endmermaid %}
+</div>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad: true});</script>
 
 ### Key Components
 
