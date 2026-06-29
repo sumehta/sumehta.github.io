@@ -53,26 +53,26 @@ Most modern CUAs are built on **Vision-Language Models (VLMs)** — multimodal t
 %%{init: {'theme': 'neutral', 'flowchart': {'curve': 'basis', 'nodeSpacing': 50, 'rankSpacing': 60}}}%%
 flowchart LR
     goal(["Task Goal"])
-    output(["click · type · scroll"])
+    output(["click / type / scroll"])
 
-    subgraph agent["  Perception → Reason → Act  "]
+    subgraph agent["Perception - Reason - Act"]
         direction LR
-        perceive["Vision\nEncoder"]
-        reason["Multimodal\nLLM"]
-        act["Action\nDecoder"]
+        perceive["Vision Encoder"]
+        reason["Multimodal LLM"]
+        act["Action Decoder"]
         perceive --> reason --> act
     end
 
     screen["Screen"]
-    history["Action\nHistory"]
+    history["Action History"]
 
     goal      --> reason
     screen    --> perceive
     history   --> reason
     act       --> output
-    output    -->|"updates"| screen
-    act      -.->|"logged to"| history
-    history  -.->|"context for"| reason
+    output    -->|updates| screen
+    act      -.->|logged to| history
+    history  -.->|context for| reason
 
     style goal    fill:#dbeafe,stroke:#3b82f6,color:#1e3a8a
     style output  fill:#dcfce7,stroke:#16a34a,color:#14532d
