@@ -49,10 +49,10 @@ Most modern CUAs are built on **Vision-Language Models (VLMs)** — multimodal t
 
 ### The Core Perception-Action Loop
 
-<div id="cua-diagram"></div>
+<div id="cua-diagram" style="width:100%;overflow-x:auto;"></div>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
-mermaid.initialize({startOnLoad: false});
+mermaid.initialize({startOnLoad: false, securityLevel: "loose"});
 var d = "flowchart LR\n" +
   "  goal([Task Goal])\n" +
   "  screen[Screen]\n" +
@@ -72,7 +72,10 @@ var d = "flowchart LR\n" +
   "  act -.-> history\n" +
   "  history -.-> reason";
 mermaid.render("cua-diagram-svg", d).then(function(r) {
-  document.getElementById("cua-diagram").innerHTML = r.svg;
+  var el = document.getElementById("cua-diagram");
+  el.innerHTML = r.svg;
+  el.querySelector("svg").style.width = "100%";
+  el.querySelector("svg").style.height = "auto";
 });
 </script>
 
