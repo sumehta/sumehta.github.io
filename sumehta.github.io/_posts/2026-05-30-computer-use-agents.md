@@ -51,34 +51,25 @@ Most modern CUAs are built on **Vision-Language Models (VLMs)** — multimodal t
 
 <div class="mermaid">
 flowchart LR
-    goal(["Task Goal"])
-    output(["click / type / scroll"])
+    goal([Task Goal])
+    screen[Screen]
+    history[Action History]
+    output([click - type - scroll])
 
-    subgraph agent["Perception - Reason - Act"]
-        perceive["Vision Encoder"]
-        reason["Multimodal LLM"]
-        act["Action Decoder"]
+    subgraph agent[Perception - Reason - Act]
+        perceive[Vision Encoder]
+        reason[Multimodal LLM]
+        act[Action Decoder]
         perceive --> reason --> act
     end
-
-    screen["Screen"]
-    history["Action History"]
 
     goal --> reason
     screen --> perceive
     history --> reason
     act --> output
-    output -->|"updates"| screen
-    act -.->|"logged to"| history
-    history -.->|"context for"| reason
-
-    style goal fill:#dbeafe,stroke:#3b82f6,color:#1e3a8a
-    style output fill:#dcfce7,stroke:#16a34a,color:#14532d
-    style screen fill:#fef9c3,stroke:#ca8a04,color:#713f12
-    style history fill:#fce7f3,stroke:#db2777,color:#831843
-    style perceive fill:#f8fafc,stroke:#94a3b8,color:#334155
-    style reason fill:#f8fafc,stroke:#94a3b8,color:#334155
-    style act fill:#f8fafc,stroke:#94a3b8,color:#334155
+    output --> screen
+    act -.-> history
+    history -.-> reason
 </div>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad: true});</script>
