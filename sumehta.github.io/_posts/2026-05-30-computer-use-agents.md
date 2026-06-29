@@ -49,32 +49,32 @@ Most modern CUAs are built on **Vision-Language Models (VLMs)** — multimodal t
 
 ### The Core Perception-Action Loop
 
-{::nomarkdown}
-<div class="mermaid">
-flowchart LR
-    goal([Task Goal])
-    screen[Screen]
-    history[Action History]
-    output([Actions])
-
-    subgraph agent[Perception - Reason - Act]
-        perceive[Vision Encoder]
-        reason[Multimodal LLM]
-        act[Action Decoder]
-        perceive --> reason --> act
-    end
-
-    goal --> reason
-    screen --> perceive
-    history --> reason
-    act --> output
-    output --> screen
-    act -.-> history
-    history -.-> reason
-</div>
+<div id="cua-diagram"></div>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad: true});</script>
-{:/}
+<script>
+mermaid.initialize({startOnLoad: false});
+var d = "flowchart LR\n" +
+  "  goal([Task Goal])\n" +
+  "  screen[Screen]\n" +
+  "  history[Action History]\n" +
+  "  output([Actions])\n" +
+  "  subgraph agent[Perception - Reason - Act]\n" +
+  "    perceive[Vision Encoder]\n" +
+  "    reason[Multimodal LLM]\n" +
+  "    act[Action Decoder]\n" +
+  "    perceive --> reason --> act\n" +
+  "  end\n" +
+  "  goal --> reason\n" +
+  "  screen --> perceive\n" +
+  "  history --> reason\n" +
+  "  act --> output\n" +
+  "  output --> screen\n" +
+  "  act -.-> history\n" +
+  "  history -.-> reason";
+mermaid.render("cua-diagram-svg", d).then(function(r) {
+  document.getElementById("cua-diagram").innerHTML = r.svg;
+});
+</script>
 
 
 ### Key Components
