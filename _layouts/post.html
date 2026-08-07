@@ -17,7 +17,7 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{%- if page.author -%} • {{ page.author }}{%- endif -%}{%- if page.meta -%} • {{ page.meta }}{%- endif -%}</p>
+    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{%- if page.author -%} • {{ page.author }}{%- endif -%}{%- if page.meta -%} • {{ page.meta }}{%- endif -%}{%- if site.goatcounter -%} • <span id="gc-views"></span>{%- endif -%}</p>
     <p class="post-tags">
       <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i class="fas fa-calendar fa-sm"></i> {{ year }} </a>
       {%- if tags != "" %}
@@ -56,6 +56,19 @@ layout: default
       {% include related_posts.html %}
     {%- endif %}
   {%- endif %}
+
+  {%- if site.goatcounter -%}
+  <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script>
+    var r = new XMLHttpRequest();
+    r.open('GET', 'https://{{ site.goatcounter }}.goatcounter.com/counter/' + encodeURIComponent(location.pathname) + '.json');
+    r.onload = function() {
+      var el = document.getElementById('gc-views');
+      if (el) el.textContent = JSON.parse(r.responseText).count + ' views';
+    };
+    r.send();
+  </script>
+  {%- endif -%}
 
   {%- if site.disqus_shortname and page.disqus_comments -%}
     {% include disqus.html %}
