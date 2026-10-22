@@ -42,17 +42,17 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+substack_url: https://techmuse2.substack.com # shown as an icon in the social links
 
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
-max_width: 800px
+max_width: 960px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -72,7 +72,7 @@ github_username: sumehta #
 gitlab_username: # your GitLab user name
 twitter_username: snehaSM # twitter username
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
+linkedin_username: mehtasneha # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: 9vb3yvoAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -121,7 +121,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Sneha Mehta # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+blog_nav_title: # your blog must have a title for it to be displayed in the nav bar
 blog_description: Tech Musings
 permalink: /blog/:year/:title/
 

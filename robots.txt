@@ -1,7 +1,55 @@
 ---
 permalink: /robots.txt
 ---
+# Block AI crawlers, training scrapers, and AI agents.
+# Regular search engines (Googlebot, Bingbot, etc.) are still allowed below.
+
+# OpenAI
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+# Anthropic
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
+# Google AI training (does not affect Google Search)
+User-agent: Google-Extended
+User-agent: GoogleOther
+# Apple AI training (does not affect Apple search)
+User-agent: Applebot-Extended
+# Meta
+User-agent: meta-externalagent
+User-agent: meta-externalfetcher
+User-agent: FacebookBot
+# Perplexity
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+# Others
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: Amazonbot
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: MistralAI-User
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: DuckAssistBot
+User-agent: YouBot
+User-agent: Diffbot
+User-agent: Timpibot
+User-agent: ImagesiftBot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: PanguBot
+User-agent: Kangaroo Bot
+User-agent: Webzio-Extended
+User-agent: img2dataset
+Disallow: /
+
+# Everyone else (including search engines)
 User-agent: *
 Disallow:
 
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Sitemap: https://sumehta.github.io/sitemap.xml

@@ -1,0 +1,71 @@
+# Projects shown on the homepage, grouped by filter tag.
+# domain: language | vision | graphics   (`url` is optional)
+
+- title: Simplify-then-Translate
+  domain: language
+  org: Netflix
+  year: 2019
+  summary: Automatic sentence simplification as preprocessing for black-box MT. Up to +4 BLEU on subtitles across 7 low-resource languages.
+  url: https://ojs.aaai.org/index.php/AAAI/article/view/6369
+
+- title: TweetNERD
+  domain: language
+  org: Twitter
+  year: 2022
+  summary: An end-to-end entity linking benchmark for tweets, released as a NeurIPS Datasets & Benchmarks paper.
+  url: https://doi.org/10.5281/zenodo.6617192
+
+- title: Event detection with hierarchical multi-aspect attention
+  domain: language
+  org: Virginia Tech
+  year: 2019
+  summary: Ph.D. work on detecting and extracting socio-political events from news articles (WWW 2019).
+  url: https://doi.org/10.1145/3308558.3313659
+
+- title: Machine-generated analytic reports
+  domain: language
+  org: ODNI Xpress Challenge
+  year: 2017
+  summary: Writes a two-page answer to an analyst's question from a large collection of articles. Finalist in the challenge.
+  url: https://github.com/sumehta/odni-dac
+
+- title: Adversarial modeling of event-encoding errors
+  domain: language
+  org: Virginia Tech
+  year: 2017
+  summary: Sentence correction with adversarially regularized autoencoders for better event encodings.
+  url: https://github.com/sumehta/ARAE
+
+- title: Topic modeling at scale with LDA
+  domain: language
+  org: Virginia Tech
+  year: 2016
+  summary: Topic analysis of Twitter and web-page collections with Scala, Spark ML, HBase, and Hadoop.
+  url: https://vtechworks.lib.vt.edu/handle/10919/70933
+
+- title: Civil War Photo Sleuth
+  domain: vision
+  org: Virginia Tech · NSF
+  year: 2019
+  summary: Combines face recognition with crowdsourced expertise to identify historical portraits. About 15,000 users. Best Paper, ACM IUI 2019.
+  url: https://doi.org/10.1145/3301275.3302301
+
+- title: Siamese network for binary VQA
+  domain: vision
+  org: Virginia Tech
+  summary: A Siamese architecture for yes/no visual question answering, trained in Torch (68.1% accuracy).
+  url: https://github.com/sumehta/siamese_network_vqa
+
+- title: Human performance in image geolocation
+  domain: vision
+  org: HCOMP 2016 · GroupSight
+  year: 2016
+  summary: An exploratory study of how people geolocate images, to guide crowd + AI tool design.
+  url: https://crowd.cs.vt.edu/wp-content/uploads/2016/10/exploratory-study-human_camera_ready.pdf
+
+- title: Birds in a Forest
+  domain: vision
+  org: Virginia Tech
+  year: 2015
+  summary: Bird species identification from images with computer vision and machine learning.
+  url: http://people.cs.vt.edu/sudo777/files/birds_in_a_forest.pdf

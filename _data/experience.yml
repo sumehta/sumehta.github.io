@@ -1,0 +1,91 @@
+# Work history, newest first. Rendered on the homepage under "Experience".
+# `domains` drives the colored tags: language | vision | graphics | recsys
+# `summary` is a short narrative paragraph (metrics live on the resume, not here).
+
+- company: Meta
+  dates: Jan 2025
+  domains: [language, vision]
+  summary: >-
+    I worked on post-training the multimodal models behind Meta AI, the assistant on
+    <a href='https://www.facebook.com/watch/?v=1611593950703542'>Ray-Ban Smart Glasses</a>.
+    My focus was teaching the assistant to understand what you see and
+    turn it into the right action. On <a href='https://www.meta.com/vr-glasses/'>VR</a>, I worked on
+    agentic modeling: curating training data, designing evaluations, and running online reinforcement
+    learning. The goal was an assistant that can reliably
+    use tools, control the device, and adapt to the person it's talking with.
+
+- company: TikTok
+  dates: Nov 2023
+  domains: [vision, recsys]
+  summary: >-
+    On TikTok Search, I brought vision-language models into video understanding. I fine-tuned VLMs to
+    summarize what happens in a video so search could use that signal directly, and the summaries became a
+    content signal used across retrieval and ranking.
+
+- company: Bloomberg
+  dates: Feb 2023
+  domains: [language]
+  summary: >-
+    I worked on the conversational side of
+    <a href='https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/'>BloombergGPT</a>,
+    preparing and curating the multi-channel conversational data used to post-train the model for
+    dialogue.
+
+- company: Twitter
+  dates: 2021
+  domains: [language, recsys]
+  summary: >-
+    At Twitter I worked at the intersection of NLP and recommendation. I built the named-entity
+    recognition models behind an end-to-end entity linking platform that served Trends and the Public API,
+    and explored knowledge distillation to make those models efficient. I also reworked how conversations
+    were ranked, bringing in new architectures and personalization across several production models.
+
+- company: DLRL Summer School
+  org: University of Alberta, Edmonton
+  dates: Summer 2019
+  summary: >-
+    I presented my event detection work at the
+    <a href='https://cifar.ca/next-generation/training-programs/deep-learning-reinforcement-learning-summer-school'>Deep Learning &amp; Reinforcement Learning Summer School</a>,
+    a two-week program run by CIFAR and Amii for graduate students and early-career researchers. That year
+    it brought together about 300 participants from Canada and around the world, with lectures and hands-on
+    sessions from leading researchers in deep learning and reinforcement learning. My attendance was
+    supported by a CS@VT travel award.
+
+- company: Netflix
+  dates: Summers 2018 & 2019
+  domains: [language]
+  summary: >-
+    Over two summers I worked on machine translation for subtitles. Off-the-shelf translation struggles with
+    complex sentences in low-resource languages, so I developed a Transformer-based approach that simplifies
+    the source text before translation. That work became an AAAI paper
+    <span class='cites'>[<a href='https://ojs.aaai.org/index.php/AAAI/article/view/6369' title='Simplify-Then-Translate: Automatic Preprocessing for Black-Box Translation (AAAI 2020)'>1</a>]</span>
+    and was featured on NVIDIA's technical blog
+    <span class='cites'>[<a href='https://developer.nvidia.com/blog/how-netflix-uses-ai-to-simplify-subtitles-for-translation-updated/' title='NVIDIA Technical Blog: How Netflix Uses AI to Simplify Subtitles for Translation'>2</a>]</span>.
+
+- company: Virginia Tech
+  dates: 2015
+  domains: [language, vision]
+  summary: >-
+    I graduated with a Ph.D. from the Data Mining Group at Virginia Tech, where I had the privilege to be
+    advised by <a href='https://scholar.google.com/citations?user=fMJwG7MAAAAJ&hl=en'>Dr. Naren Ramakrishnan</a>. I was also fortunate
+    enough to have had my Ph.D. studies funded by both an NSF Graduate Research Fellowship and a DARPA
+    Research Grant. My thesis
+    explored an attention-based multi-instance learning approach for interpretable event detection and
+    key-phrase identification, along with reading-comprehension-based event extraction
+    <span class='cites'>[<a href='https://doi.org/10.1145/3308558.3313659' title='Event Detection Using Hierarchical Multi-Aspect Attention (WWW 2019)'>1</a>,
+    <a href='https://arxiv.org/abs/1912.00835' title='Low Rank Factorization for Compact Multi-Head Self-Attention (arXiv 2019)'>2</a>,
+    <a href='https://arxiv.org/abs/2204.02531' title='Improving Zero-Shot Event Extraction via Sentence Simplification (CASE @ EMNLP 2022)'>3</a>,
+    <a href='https://vtechworks.lib.vt.edu/items/64cf6c78-7eca-48aa-9326-2bbaa1c20d94' title='Ph.D. thesis, Virginia Tech, 2021'>4</a>]</span>.
+    I also worked on generating natural-language narratives from large causal graphs for <a href='https://www.darpa.mil/research/programs/world-modelers'>DARPA's World Modelers program</a>.
+    Before that, I spent time developing crowd+AI systems with
+    <a href='https://crowd.cs.vt.edu/kurt-luther/'>Dr. Kurt Luther</a>, including <a href='https://www.civilwarphotosleuth.com/'>Civil War Photo Sleuth</a>,
+    which combines face recognition with crowdsourced expertise to identify people in historical
+    photographs.
+
+- company: DreamWorks Animation
+  dates: 2014
+  domains: [graphics]
+  summary: >-
+    I started my career in feature animation. I built pieces of a distributed compute framework that
+    orchestrates the large rendering and simulation workflows behind each film, and worked as a Layout TD
+    on <em>Penguins of Madagascar</em>.

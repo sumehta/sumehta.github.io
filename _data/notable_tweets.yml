@@ -1,0 +1,20 @@
+# Add one entry per post you want to feature. The homepage will automatically display it.
+- title: "Improving Zero-Shot Event Extraction via Sentence Simplification"
+  event: "EMNLP · 2022"
+  url: "https://underline.io/lecture/66563-improving-zero-shot-event-extraction-via-sentence-simplification"
+  note: "Talk at the CASE workshop on automated extraction of socio-political events."
+
+- title: "Web Conference 2020 paper presentation"
+  event: "WebConf · 2020"
+  url: "https://x.com/snehaSM/status/1128739283681009664?s=20"
+  note: "Presenting research work at The Web Conference."
+
+- title: "AAAI paper presentation"
+  event: "AAAI · 2020"
+  url: "https://x.com/snehaSM/status/1226159665416986625?s=20"
+  note: "Sharing research presented at AAAI."
+
+- title: "Research presentation at MASCLL"
+  event: "University of Maryland, College Park"
+  url: "https://x.com/snehaSM/status/1236057791640547329?s=20"
+  note: "Presenting research work at MASCLL."

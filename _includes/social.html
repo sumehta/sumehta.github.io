@@ -103,6 +103,6 @@
             {%- if site.discord_id -%}
             <a href="https://discord.com/users/{{ site.discord_id }}" title="Discord"><i class="fab fa-discord"></i></a>
             {% endif %}
-            {%- if site.rss_icon -%}
-            <a href="{{ '/blog/' | relative_url }}" title="Blog"><i class="fas fa-rss-square"></i></a>
+            {%- if site.substack_url -%}
+            <a href="{{ site.substack_url }}" title="Substack">{% include substack_icon.html %}</a>
             {% endif %}
