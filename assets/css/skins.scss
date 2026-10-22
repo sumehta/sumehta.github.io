@@ -129,3 +129,95 @@ html[data-skin~='retro'] {
   html[data-skin~='retro'] #navbar .nav-contact { display: inline-block; margin: .4rem 0 .6rem; padding: .45rem .9rem !important; }
   html[data-skin~='retro'] .home-intro { padding-bottom: 8rem; }
 }
+
+// =============================================================================
+// SUPER MARIO — layered on top of Retro (<html data-skin="retro mario">).
+// Sky-blue world, red nav, ?-block title bars, pixel font, platformer hero.
+// =============================================================================
+html[data-skin~='mario'] {
+  --ink: #000;
+  --paper: #5c94fc;
+  --panel: #fffdf6;
+  --muted: #4a4a4a;
+  --pink: #fbd000;
+  --m-red: #e52521;
+  --m-yellow: #fbd000;
+  --m-green: #43b047;
+  --m-blue: #049cd8;
+  --m-brick: #c84c0c;
+  --chip-language: var(--m-red);
+  --chip-vision: var(--m-green);
+  --chip-graphics: var(--m-yellow);
+  --chip-recsys: var(--m-blue);
+  --global-theme-color: #c41a17;
+  --global-bg-color: var(--paper);
+}
+html[data-skin~='mario'][data-theme='dark'] {
+  --ink: #000;
+  --paper: #0b1030;
+  --panel: #1a1d3d;
+  --muted: #b9bfe0;
+  --global-theme-color: #ff8a7a;
+  --global-text-color: #f4f4ff;
+}
+html[data-skin~='mario'] .home-intro::before {
+  background: var(--paper) url("{{ '/assets/img/hero-mario.png' | relative_url }}") left bottom / 960px 360px repeat-x;
+  border-bottom: 3px solid var(--ink);
+}
+html[data-skin~='mario'][data-theme='dark'] .home-intro::before { background-image: url("{{ '/assets/img/hero-mario-dark.png' | relative_url }}"); }
+
+html[data-skin~='mario'] {
+  // Nav: sky-blue bar that blends into the level, white pixel brand, yellow ?-block contact button
+  #navbar {
+    background: var(--paper) !important; border-bottom: 3px solid var(--ink);
+    .navbar-brand { font-family: 'Press Start 2P', monospace; font-size: .8rem; color: #fff; text-shadow: 2px 2px 0 #000; }
+    .nav-link { color: var(--global-text-color) !important; border-left-color: var(--global-text-color); }
+    .nav-contact { background: var(--m-yellow); color: #000 !important; border: 2px solid #000; box-shadow: 3px 3px 0 #000; }
+    #light-toggle, .navbar-toggler { color: var(--global-text-color); }
+    .navbar-toggler .icon-bar { background-color: var(--global-text-color); }
+  }
+
+  // Hero: bio sits in a white dialogue box over the level
+  .home-intro-text {
+    background: var(--panel); border: 3px solid var(--ink); box-shadow: 6px 6px 0 var(--ink);
+    padding: 1.4rem 1.6rem 1rem; margin-right: 1rem;
+  }
+  .home-intro-text p { text-shadow: none; }
+  .home-photo { border-width: 3px; background-color: var(--m-yellow); }
+
+  // Sections: thick outlines, ?-block yellow title bars with pixel labels
+  .home-section {
+    border: 3px solid var(--ink); box-shadow: 7px 7px 0 var(--ink);
+    &::before { background: var(--m-yellow); height: 26px; border-bottom: 3px solid var(--ink); }
+    &::after {
+      content: '?  ' attr(data-label); background: transparent; top: 5px; left: 12px;
+      font: .58rem/16px 'Press Start 2P', monospace; color: #000;
+    }
+  }
+  #experience::after { color: var(--m-red); }
+
+  .timeline-body h3, .project-card h3 { font-family: 'Press Start 2P', monospace; font-size: .82rem; line-height: 1.5; }
+  .timeline-item + .timeline-item { border-top: 3px dotted var(--m-brick); }
+
+  .tag { border-width: 2px; color: #fff !important; font-weight: 600; }
+  .interest { color: #fff !important; border-width: 2px; }
+  .tag-graphics, .interest-graphics { color: #000 !important; }
+  .project-filters button {
+    border-width: 2px;
+    &.active { background: var(--m-yellow); color: #000; }
+  }
+  .project-card { border-width: 2px; border-top-width: 14px; }
+  .tag-border-language { --area-color: var(--m-red); }
+  .tag-border-vision   { --area-color: var(--m-green); }
+
+  // Brick ground under the footer
+  footer { border-top: none; background: transparent !important; color: #000; }
+  body { padding-bottom: 300px;
+    background-image: url("{{ '/assets/img/hero-mario.png' | relative_url }}");
+    background-repeat: repeat-x; background-position: left bottom; background-size: 960px 360px; image-rendering: pixelated;
+  }
+}
+html[data-skin~='mario'][data-theme='dark'] body { background-image: url("{{ '/assets/img/hero-mario-dark.png' | relative_url }}"); }
+@media (max-width: 767px) {
+  html[data-skin~='mario'] .home-intro-text { margin-right: 0; padding: 1.1rem 1.1rem .8rem; }
+}

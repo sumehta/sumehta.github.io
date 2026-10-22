@@ -2,6 +2,15 @@
 layout: default
 ---
 <!-- A full-width, single-page academic homepage. -->
+<script>
+  // Theme preview: add ?skin=mario to the URL to layer a theme on top of retro.
+  (function () {
+    try {
+      var s = new URLSearchParams(window.location.search).get('skin');
+      if (s) document.documentElement.setAttribute('data-skin', 'retro ' + s);
+    } catch (e) {}
+  })();
+</script>
 <main class="academic-home">
   {{ content }}
 </main>
