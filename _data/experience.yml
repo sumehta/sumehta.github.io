@@ -3,7 +3,7 @@
 # `summary` is a short narrative paragraph (metrics live on the resume, not here).
 
 - company: Meta
-  dates: Jan 2025
+  dates: 2025
   domains: [language, vision]
   summary: >-
     I worked on post-training the multimodal models behind Meta AI, the assistant on
@@ -15,7 +15,7 @@
     use tools, control the device, and adapt to the person it's talking with.
 
 - company: TikTok
-  dates: Nov 2023
+  dates: 2023
   domains: [vision, recsys]
   summary: >-
     On TikTok Search, I brought vision-language models into video understanding. I fine-tuned VLMs to
