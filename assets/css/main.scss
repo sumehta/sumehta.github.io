@@ -109,6 +109,11 @@ html[data-theme='dark'] {
   & + & { border-top: 1px dashed var(--global-divider-color); }
 }
 .timeline-dates { color: var(--global-text-color-light); font-size: .88rem; padding-top: .15rem; font-variant-numeric: tabular-nums; }
+.timeline-company { display: flex; align-items: center; gap: .55rem; }
+.timeline-logo {
+  width: 1.6rem; height: 1.6rem; flex: none; object-fit: contain; border-radius: 6px;
+  background: #fff; padding: 2px; border: 1px solid var(--global-divider-color);
+}
 .timeline-body .home-meta { margin: 0; color: var(--global-text-color-light); font-size: .9rem; }
 .timeline-summary { margin: 0; font-size: .97rem; line-height: 1.7; max-width: 640px; }
 

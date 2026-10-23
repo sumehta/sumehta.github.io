@@ -29,7 +29,7 @@ permalink: /
     <li class="timeline-item">
       <div class="timeline-dates">{{ job.dates }}</div>
       <div class="timeline-body">
-        <h3>{{ job.company }}</h3>
+        <h3 class="timeline-company">{% if job.logo %}<img class="timeline-logo" src="{{ '/assets/img/logos/' | append: job.logo | relative_url }}" alt="" loading="lazy">{% endif %}{{ job.company }}</h3>
         {%- assign meta = "" | split: "" -%}{%- if job.org %}{% assign meta = meta | push: job.org %}{% endif -%}{%- if job.location %}{% assign meta = meta | push: job.location %}{% endif %}
         {%- if meta.size > 0 %}<p class="home-meta">{{ meta | join: " &middot; " }}</p>{% endif %}
         {%- if job.domains %}

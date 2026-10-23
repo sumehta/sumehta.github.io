@@ -1,8 +1,10 @@
 # Work history, newest first. Rendered on the homepage under "Experience".
 # `domains` drives the colored tags: language | vision | graphics | recsys
+# `logo` is a file in assets/img/logos/.
 # `summary` is a short narrative paragraph (metrics live on the resume, not here).
 
 - company: Meta
+  logo: meta.jpg
   dates: 2025
   domains: [language, vision]
   summary: >-
@@ -15,6 +17,7 @@
     use tools, control the device, and adapt to the person it's talking with.
 
 - company: TikTok
+  logo: tiktok.png
   dates: 2023
   domains: [vision, recsys]
   summary: >-
@@ -23,6 +26,7 @@
     content signal used across retrieval and ranking.
 
 - company: Twitter
+  logo: twitter.svg
   dates: 2021
   domains: [language, recsys]
   summary: >-
@@ -32,6 +36,7 @@
     were ranked, bringing in new architectures and personalization across several production models.
 
 - company: Netflix
+  logo: netflix.png
   dates: Summers 2018 & 2019
   domains: [language]
   summary: >-
@@ -43,6 +48,7 @@
     <span class='cites'>[<a href='https://developer.nvidia.com/blog/how-netflix-uses-ai-to-simplify-subtitles-for-translation-updated/' title='NVIDIA Technical Blog: How Netflix Uses AI to Simplify Subtitles for Translation'>2</a>]</span>.
 
 - company: Virginia Tech
+  logo: vt.png
   dates: 2015
   domains: [language, vision]
   summary: >-
@@ -63,6 +69,7 @@
     photographs.
 
 - company: DreamWorks Animation
+  logo: dreamworks.png
   dates: 2014
   domains: [graphics]
   summary: >-
