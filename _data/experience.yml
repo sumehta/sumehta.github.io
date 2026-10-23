@@ -22,15 +22,6 @@
     summarize what happens in a video so search could use that signal directly, and the summaries became a
     content signal used across retrieval and ranking.
 
-- company: Bloomberg
-  dates: Feb 2023
-  domains: [language]
-  summary: >-
-    I worked on the conversational side of
-    <a href='https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/'>BloombergGPT</a>,
-    preparing and curating the multi-channel conversational data used to post-train the model for
-    dialogue.
-
 - company: Twitter
   dates: 2021
   domains: [language, recsys]
@@ -39,17 +30,6 @@
     recognition models behind an end-to-end entity linking platform that served Trends and the Public API,
     and explored knowledge distillation to make those models efficient. I also reworked how conversations
     were ranked, bringing in new architectures and personalization across several production models.
-
-- company: DLRL Summer School
-  org: University of Alberta, Edmonton
-  dates: Summer 2019
-  summary: >-
-    I presented my event detection work at the
-    <a href='https://cifar.ca/next-generation/training-programs/deep-learning-reinforcement-learning-summer-school'>Deep Learning &amp; Reinforcement Learning Summer School</a>,
-    a two-week program run by CIFAR and Amii for graduate students and early-career researchers. That year
-    it brought together about 300 participants from Canada and around the world, with lectures and hands-on
-    sessions from leading researchers in deep learning and reinforcement learning. My attendance was
-    supported by a CS@VT travel award.
 
 - company: Netflix
   dates: Summers 2018 & 2019

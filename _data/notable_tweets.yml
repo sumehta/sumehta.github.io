@@ -18,3 +18,8 @@
   event: "University of Maryland, College Park"
   url: "https://x.com/snehaSM/status/1236057791640547329?s=20"
   note: "Presenting research work at MASCLL."
+
+- title: "Deep Learning & Reinforcement Learning Summer School"
+  event: "DLRL · 2019 · University of Alberta, Edmonton"
+  url: "https://cifar.ca/next-generation/training-programs/deep-learning-reinforcement-learning-summer-school"
+  note: "Presented my event detection work at the CIFAR and Amii summer school, supported by a CS@VT travel award."
