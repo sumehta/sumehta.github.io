@@ -9,53 +9,38 @@
   domains: [language, vision]
   summary: >-
     I worked on post-training the multimodal models behind Meta AI, the assistant on
-    <a href='https://www.facebook.com/watch/?v=1611593950703542'>Ray-Ban Smart Glasses</a>.
+    <a href='https://www.facebook.com/watch/?v=1611593950703542'>Ray-Ban Smart Glasses</a>
+    and <a href='https://www.meta.com/vr-glasses/'>VR</a>.
     My focus was teaching the assistant to understand what you see and
-    turn it into the right action. On <a href='https://www.meta.com/vr-glasses/'>VR</a>, I worked on
-    agentic modeling: curating training data, designing evaluations, and running online reinforcement
-    learning. The goal was an assistant that can reliably
-    use tools, control the device, and adapt to the person it's talking with.
+    turn it into the right action.
 
 - company: TikTok
   logo: tiktok.png
   dates: 2023
   domains: [vision, recsys]
   summary: >-
-    On TikTok Search, I brought vision-language models into video understanding. I fine-tuned VLMs to
-    summarize what happens in a video so search could use that signal directly, and the summaries became a
-    content signal used across retrieval and ranking.
+    Search & Content Understanding
 
 - company: Twitter
   logo: twitter.svg
   dates: 2021
   domains: [language, recsys]
   summary: >-
-    At Twitter I worked at the intersection of NLP and recommendation. I built the named-entity
-    recognition models behind an end-to-end entity linking platform that served Trends and the Public API,
-    and explored knowledge distillation to make those models efficient. I also reworked how conversations
-    were ranked, bringing in new architectures and personalization across several production models.
+    Content Understanding, Ranking & Personalization
 
 - company: Netflix
   logo: netflix.png
-  dates: Summers 2018 & 2019
+  dates: 2018 & 2019
   domains: [language]
   summary: >-
-    Over two summers I worked on machine translation for subtitles. Off-the-shelf translation struggles with
-    complex sentences in low-resource languages, so I developed a Transformer-based approach that simplifies
-    the source text before translation. That work became an AAAI paper
-    <span class='cites'>[<a href='https://ojs.aaai.org/index.php/AAAI/article/view/6369' title='Simplify-Then-Translate: Automatic Preprocessing for Black-Box Translation (AAAI 2020)'>1</a>]</span>
-    and was featured on NVIDIA's technical blog
-    <span class='cites'>[<a href='https://developer.nvidia.com/blog/how-netflix-uses-ai-to-simplify-subtitles-for-translation-updated/' title='NVIDIA Technical Blog: How Netflix Uses AI to Simplify Subtitles for Translation'>2</a>]</span>.
+    Machine Translation & Localization
 
 - company: Virginia Tech
   logo: vt.png
   dates: 2015
   domains: [language, vision]
   summary: >-
-    I graduated with a Ph.D. from the Data Mining Group at Virginia Tech, where I had the privilege to be
-    advised by <a href='https://scholar.google.com/citations?user=fMJwG7MAAAAJ&hl=en'>Dr. Naren Ramakrishnan</a>. I was also fortunate
-    enough to have had my Ph.D. studies funded by both an NSF Graduate Research Fellowship and a DARPA
-    Research Grant. My thesis
+    My Ph.D. thesis
     explored an attention-based multi-instance learning approach for interpretable event detection and
     key-phrase identification, along with reading-comprehension-based event extraction
     <span class='cites'>[<a href='https://doi.org/10.1145/3308558.3313659' title='Event Detection Using Hierarchical Multi-Aspect Attention (WWW 2019)'>1</a>,
@@ -73,6 +58,4 @@
   dates: 2014
   domains: [graphics]
   summary: >-
-    I started my career in feature animation. I built pieces of a distributed compute framework that
-    orchestrates the large rendering and simulation workflows behind each film, and worked as a Layout TD
-    on <em>Penguins of Madagascar</em>.
+    Pipeline & Layout TD on <em>Penguins of Madagascar</em>.

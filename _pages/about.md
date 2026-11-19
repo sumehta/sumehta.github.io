@@ -9,17 +9,41 @@ permalink: /
   <img class="home-photo" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Photo of Sneha Mehta" width="160" height="160">
   <div class="home-intro-text">
   <h1 class="sr-only">Sneha Mehta</h1>
-  <p>I train and evaluate language and multimodal models that run in products used by hundreds of millions of people, most recently Meta AI on <a href='https://www.facebook.com/watch/?v=1611593950703542'>Ray-Ban Smart Glasses</a> and <a href='https://www.meta.com/vr-glasses/'>Quest and VR devices</a>, and before that TikTok Search and Twitter.</p>
-  <p>I started on feature-film pipelines at <a href="https://www.dreamworks.com/movies/penguins-of-madagascar">DreamWorks Animation</a>, earned a Ph.D. in machine learning at Virginia Tech, and now work on post-training, RL, and agentic systems.</p>
-  <p>I also write about AI research on my blog, <a class="substack-link" href="{{ site.substack_url }}">{% include substack_icon.html %}tech_muse on Substack</a>.</p>
+  <p class="home-tagline">AI Research Engineer and Writer @<a href="{{ site.substack_url }}">tech_muse</a></p>
+  <p>I am interested in developing useful and safe AI agents. I earned my Ph.D. in the Data Mining Group at Virginia Tech, advised by <a href="https://scholar.google.com/citations?user=fMJwG7MAAAAJ&hl=en">Dr. Naren Ramakrishnan</a>, with funding from an NSF Graduate Research Fellowship and a DARPA research grant.</p>
   <p class="home-social">{% include social.html %}</p>
   </div>
 </div>
 
-<div class="home-section" id="interests" data-label="research interests">
-  <h2>Research interests</h2>
-  <p>My work has spanned three ways machines make sense of the world: <span class="interest interest-language">language</span>, from LLM post-training and agentic tool use to information extraction and translation; <span class="interest interest-vision">vision</span>, from multimodal assistants and video understanding to face recognition; and <span class="interest interest-graphics">graphics</span>, rendering and simulating worlds for feature animation.</p>
-  <p>Next, I want to bring these together in <strong>world models</strong>: systems that understand the world the way people do, by combining sight, sound, language, and other senses into a single picture they can reason about, predict from, and act in.</p>
+{% if site.data.notable_tweets and site.data.notable_tweets.size > 0 %}
+<div class="home-section" id="tweets" data-label="news">
+  <h2>News</h2>
+  <ul class="home-list">
+    {%- for talk in site.data.notable_tweets %}
+    <li>
+      {% if talk.url %}<a href="{{ talk.url }}">{{ talk.title }}</a>{% else %}<strong>{{ talk.title }}</strong>{% endif %}
+      <span class="home-meta">{{ talk.event }}{% if talk.note %} &mdash; {{ talk.note }}{% endif %}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<div class="home-section" id="projects" data-label="projects / code">
+  <h2>Projects / Code</h2>
+  <div class="project-filters" role="group" aria-label="Filter projects by area">
+    <button type="button" class="active" data-filter="all">All</button>
+    <button type="button" data-filter="language">Language</button>
+    <button type="button" data-filter="vision">Vision</button>
+  </div>
+  <div class="project-grid">
+    {%- for p in site.data.projects_showcase %}
+    <article class="project-card tag-border-{{ p.domain }}" data-domain="{{ p.domain }}">
+      <h3>{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+      <p>{{ p.summary }}</p>
+    </article>
+    {%- endfor %}
+  </div>
 </div>
 
 <div class="home-section" id="experience" data-label="experience">
@@ -44,24 +68,6 @@ permalink: /
     </li>
     {%- endfor %}
   </ol>
-</div>
-
-<div class="home-section" id="projects" data-label="projects">
-  <h2>Projects</h2>
-  <div class="project-filters" role="group" aria-label="Filter projects by area">
-    <button type="button" class="active" data-filter="all">All</button>
-    <button type="button" data-filter="language">Language</button>
-    <button type="button" data-filter="vision">Vision</button>
-  </div>
-  <div class="project-grid">
-    {%- for p in site.data.projects_showcase %}
-    <article class="project-card tag-border-{{ p.domain }}" data-domain="{{ p.domain }}">
-      <h3>{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
-      <p class="home-meta">{{ p.org }}{% if p.year %} &middot; {{ p.year }}{% endif %}</p>
-      <p>{{ p.summary }}</p>
-    </article>
-    {%- endfor %}
-  </div>
 </div>
 
 <div class="home-section" id="publications" data-label="publications">
@@ -116,39 +122,13 @@ permalink: /
   <p class="home-note home-patent"><strong>Patent:</strong> Automatic Preprocessing for Black Box Translation &mdash; Mehta, Kumar, Bihani, Chen, Misra, Semeniakin, Saluja, Bonaci. U.S. Pat. Ser. No. 62/896,552.</p>
 </div>
 
-<div class="home-section" id="recognition" data-label="recognition &amp; education">
-  <h2>Recognition &amp; education</h2>
-  <div class="two-col">
-    <ul class="home-list home-list-bullets">
-      <li><a href="https://blog.twitch.tv/en/2020/01/15/introducing-our-2020-twitch-research-fellows/">Twitch (Amazon) Research Fellowship</a></li>
-      <li><a href="https://crowd.cs.vt.edu/category/awards/">Best Paper Award, ACM IUI 2019</a></li>
-      <li>Finalist, <a href="https://github.com/sumehta/odni-dac">ODNI Xpress Challenge</a></li>
-      <li>Mitacs Globalink Research Grant</li>
-    </ul>
-    <ul class="home-list">
-      <li><strong>Virginia Tech</strong><span class="home-meta">Ph.D., Computer Science &mdash; advised by <a href="https://scholar.google.com/citations?user=fMJwG7MAAAAJ&hl=en">Naren Ramakrishnan</a></span></li>
-      <li><strong>BITS Pilani</strong><span class="home-meta">B.E., Computer Science &amp; Engineering; M.Sc., Mathematics (ranked 1st in class)</span></li>
-    </ul>
-  </div>
-</div>
-
-{% if site.data.notable_tweets and site.data.notable_tweets.size > 0 %}
-<div class="home-section" id="tweets" data-label="talks &amp; posts">
-  <h2>Talks &amp; posts</h2>
+<div class="home-section" id="education" data-label="education">
+  <h2>Education</h2>
   <ul class="home-list">
-    {%- for talk in site.data.notable_tweets %}
-    <li>
-      <a href="{{ talk.url }}">{{ talk.title }}</a>
-      <span class="home-meta">{{ talk.event }}{% if talk.note %} &mdash; {{ talk.note }}{% endif %}</span>
-    </li>
-    {%- endfor %}
+    <li><strong>Virginia Tech</strong><span class="home-meta">Ph.D., Computer Science &mdash; advised by <a href="https://scholar.google.com/citations?user=fMJwG7MAAAAJ&hl=en">Naren Ramakrishnan</a></span></li>
+    <li><strong>BITS Pilani</strong><span class="home-meta">B.E., Computer Science &amp; Engineering; M.Sc., Mathematics</span></li>
+    <li><strong><a href="https://www.hri.res.in/">Harish-Chandra Research Institute</a></strong><span class="home-meta"><a href="https://www.hri.res.in/~spim/">Summer Programme in Mathematics (SPIM)</a>, 2012</span></li>
   </ul>
-</div>
-{% endif %}
-
-<div class="home-section" id="writing" data-label="writing">
-  <h2>Writing</h2>
-  <p class="home-note">I write about AI research on Substack at <a href="https://techmuse2.substack.com">tech_muse</a>. <a href="https://techmuse2.substack.com/subscribe">Subscribe</a> for new posts.</p>
 </div>
 
 <div class="home-section" id="contact" data-label="contact">
@@ -158,13 +138,65 @@ permalink: /
 </div>
 
 <script>
-  document.querySelectorAll('.project-filters button').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var f = btn.dataset.filter;
-      document.querySelectorAll('.project-filters button').forEach(function (b) { b.classList.toggle('active', b === btn); });
-      document.querySelectorAll('.project-card').forEach(function (c) {
-        c.hidden = f !== 'all' && c.dataset.domain !== f;
+  (function () {
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Project filters: cards slide to their new spots (FLIP) and newly shown ones fade in.
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.project-card'));
+    document.querySelectorAll('.project-filters button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var f = btn.dataset.filter;
+        document.querySelectorAll('.project-filters button').forEach(function (b) { b.classList.toggle('active', b === btn); });
+        var before = new Map();
+        cards.forEach(function (c) { if (!c.hidden) before.set(c, c.getBoundingClientRect()); });
+        cards.forEach(function (c) { c.hidden = f !== 'all' && c.dataset.domain !== f; });
+        if (reduceMotion || !Element.prototype.animate) return;
+        cards.forEach(function (c) {
+          if (c.hidden) return;
+          var first = before.get(c), last = c.getBoundingClientRect();
+          if (first) {
+            var dx = first.left - last.left, dy = first.top - last.top;
+            if (dx || dy) c.animate([{ transform: 'translate(' + dx + 'px,' + dy + 'px)' }, { transform: 'none' }],
+                                    { duration: 380, easing: 'cubic-bezier(.2,.8,.2,1)' });
+          } else {
+            c.animate([{ opacity: 0, transform: 'scale(.92)' }, { opacity: 1, transform: 'none' }],
+                      { duration: 320, easing: 'ease-out' });
+          }
+        });
       });
     });
-  });
+
+    // Title bar drag: grab a section's striped title bar to nudge the window; it springs back on release.
+    document.querySelectorAll('.home-section').forEach(function (sec) {
+      var startX, startY, pid = null;
+      function onBar(e) { return e.clientY - sec.getBoundingClientRect().top <= 26; }
+      sec.addEventListener('pointerdown', function (e) {
+        if (e.pointerType === 'touch' || e.button !== 0 || !onBar(e)) return;
+        if (e.target.closest('a, button')) return;
+        pid = e.pointerId; startX = e.clientX; startY = e.clientY;
+        sec.setPointerCapture(pid); sec.classList.add('is-dragging');
+        e.preventDefault();
+      });
+      sec.addEventListener('pointermove', function (e) {
+        if (e.pointerId !== pid) return;
+        // Rubber-band: the window follows the pointer but resists, staying within a few pixels.
+        var dx = e.clientX - startX, dy = e.clientY - startY;
+        function band(d) { return 28 * Math.tanh(d / 90); }
+        sec.style.transform = 'translate(' + band(dx) + 'px,' + band(dy) + 'px)';
+      });
+      function release(e) {
+        if (e.pointerId !== pid) return;
+        pid = null;
+        var from = sec.style.transform || 'none';
+        sec.classList.remove('is-dragging'); sec.style.transform = '';
+        if (!reduceMotion && Element.prototype.animate && from !== 'none') {
+          sec.animate([{ transform: from }, { transform: 'none' }],
+                      { duration: 450, easing: 'cubic-bezier(.3, 1.6, .5, 1)' });
+        }
+      }
+      sec.addEventListener('pointerup', release);
+      sec.addEventListener('pointercancel', release);
+    });
+
+  })();
 </script>

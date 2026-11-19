@@ -2,7 +2,7 @@
 - title: "Improving Zero-Shot Event Extraction via Sentence Simplification"
   event: "EMNLP · 2022"
   url: "https://underline.io/lecture/66563-improving-zero-shot-event-extraction-via-sentence-simplification"
-  note: "Talk at the CASE workshop on automated extraction of socio-political events."
+  note: "Talk on automated extraction of socio-political events."
 
 - title: "Web Conference 2020 paper presentation"
   event: "WebConf · 2020"
@@ -14,6 +14,11 @@
   url: "https://x.com/snehaSM/status/1226159665416986625?s=20"
   note: "Sharing research presented at AAAI."
 
+- title: "How Netflix Uses AI to Simplify Subtitles for Translation"
+  event: "NVIDIA Technical Blog"
+  url: "https://developer.nvidia.com/blog/how-netflix-uses-ai-to-simplify-subtitles-for-translation-updated/"
+  note: "Feature on my Netflix work on Localization"
+
 - title: "Research presentation at MASCLL"
   event: "University of Maryland, College Park"
   url: "https://x.com/snehaSM/status/1236057791640547329?s=20"
@@ -23,3 +28,19 @@
   event: "DLRL · 2019 · University of Alberta, Edmonton"
   url: "https://cifar.ca/next-generation/training-programs/deep-learning-reinforcement-learning-summer-school"
   note: "Presented my event detection work at the CIFAR and Amii summer school, supported by a CS@VT travel award."
+
+- title: "Twitch (Amazon) Research Fellowship"
+  event: "Twitch · 2020"
+  url: "https://blog.twitch.tv/en/2020/01/15/introducing-our-2020-twitch-research-fellows/"
+
+- title: "Best Paper Award, ACM IUI 2019"
+  event: "ACM IUI · 2019"
+  url: "https://crowd.cs.vt.edu/category/awards/"
+
+- title: "Finalist, ODNI Xpress Challenge"
+  event: "ODNI · 2017"
+  url: "https://github.com/sumehta/odni-dac"
+
+- title: "Mitacs Globalink Research Grant"
+  event: "Mitacs"
+  url: "https://www.mitacs.ca/our-programs/globalink-research-award/"
