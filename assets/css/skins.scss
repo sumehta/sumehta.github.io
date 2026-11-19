@@ -77,7 +77,6 @@ html[data-skin~='retro'] {
   .home-intro::after {
     background: url("{{ '/assets/img/hero-hills.png' | relative_url }}") 0 bottom / 3168px 660px repeat-x;
     bottom: 1.5px;
-    animation: hills-drift 240s linear infinite;
   }
   .home-intro p { font-size: 1.12rem; }
   .home-intro p.home-tagline { font-family: 'IBM Plex Mono', monospace; font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 1.1rem; }
@@ -244,12 +243,11 @@ html[data-skin~='mario'][data-theme='dark'] body { background-image: url("{{ '/a
 
 
 // =============================================================================
-// ANIMATION — drifting sky and hills, shadow press, draggable title bars.
+// ANIMATION — drifting sky, card press, draggable title bars.
 // =============================================================================
 @keyframes sky-drift { from { background-position-x: 0; } to { background-position-x: -3168px; } }
-@keyframes hills-drift { from { background-position-x: 0; } to { background-position-x: 3168px; } }
 
-// Shadow press: project cards lift on hover and press down when clicked.
+// Shadow press: project cards press down when clicked.
 html[data-skin~='retro'] .home-section {
   // The striped title bar is a drag handle (script in _pages/about.md).
   &::before, h2 { cursor: grab; }
@@ -258,11 +256,10 @@ html[data-skin~='retro'] .home-section {
 }
 html[data-skin~='retro'] .project-card {
   transition: transform .12s ease, box-shadow .12s ease;
-  &:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
   &:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--ink); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html[data-skin~='retro'] .home-intro::before, html[data-skin~='retro'] .home-intro::after { animation: none; }
+  html[data-skin~='retro'] .home-intro::before { animation: none; }
   html[data-skin~='retro'] .project-card { transition: none; }
 }
